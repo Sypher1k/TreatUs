@@ -1,0 +1,7 @@
+
+<select [(ngModel)]= "selectedRestaurant">
+        <option value="All">All restaurants</option>
+        <option *ngFor="let rest of this.restaurantName" value="{{ rest }}" >{{ rest }}</option>
+</select>
+
+      <p>Selected : {{ selectedRestaurant }}</p>//You can access this'selectedRestaurant' from both model and view sides
